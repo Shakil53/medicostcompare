@@ -52,7 +52,7 @@ const NavBar = () => {
                     </div>
                 </div>
                 <div className="text-teal-800 divider lg:divider-horizontal"></div>
-                <Link className="btn mr-4">Button</Link>
+                <Link className="btn mr-4">Login</Link>
             </div>
         </div>
     );
