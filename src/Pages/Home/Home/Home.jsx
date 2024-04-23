@@ -1,15 +1,15 @@
 import Footer from "../../Shared/Footer/Footer";
-import NavBar from "../../Shared/NavBar/NavBar";
-import AsideNav from "../AsideNav/AsideNav";
+
+import AsideNav from "../../layout/AsideNav";
+
 
 
 
 const Home = () => {
     return (
         <div>
-            <NavBar></NavBar>
-            <AsideNav></AsideNav>
-
+          
+           <AsideNav></AsideNav>
             <Footer></Footer>
         </div>
     );
