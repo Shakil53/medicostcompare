@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import logo from '../../../assets/logo/logo1.svg';
 
@@ -8,8 +8,10 @@ const NavBar = () => {
     const navOptions = <>
 
 
-        <li className='text-lg font-semibold text-[#ebefe9]'><Link to='/'>Home</Link></li>
-        <li className='text-lg font-semibold text-[#ebefe9] ml-3 '><Link to='/comparePrice'>Compare Price</Link></li>
+      
+            <li className='text-lg font-semibold lg:text-[#ebefe9] text-black '><Link to='/'>Home</Link></li>
+            <li className='text-lg font-semibold lg:text-[#ebefe9] text-black lg:ml-3 '><Link to='/comparePrice'>Compare Price</Link></li>
+       
 
     </>
 
@@ -28,11 +30,11 @@ const NavBar = () => {
                 </div>
                 {/* <Link to='/' className="btn btn-outline bg-teal-400 text-white hover:to-teal-400 normal-case text-xl">MediCostCom.</Link> */}
                 <motion.div initial={{ x: -150 }} animate={{ x: 0, y: -3, scale: 1.2 }} transition={{ duration: .5, type: 'spring', stiffness: 70 }} className="flex flex-shrink-0 items-center">
-                    <img
-                        className="w-12"
+                   <NavLink to='/'> <img
+                        className="w-12 sm:ml-4 md:ml-4"
                         src={logo}
                         alt="medicostcompare"
-                    />
+                    /></NavLink>
                 </motion.div>
             </div>
 
