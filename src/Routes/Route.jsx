@@ -7,14 +7,20 @@ import Home from "../Pages/Home/Home/Home";
 import ComparePrice from "../Pages/ComparePrice/ComparePrice";
 import AsideNav from "../Pages/layout/AsideNav";
 import OTCmedicine from "../Pages/medicineAll/OTCmedicine";
-import WomenChoice from "../Pages/medicineAll/WomenChoice";
-import SexualWellness from "../Pages/medicineAll/SexualWellness";
-import DiabeticCare from "../Pages/medicineAll/DiabeticCare";
-import BabyCare from "../Pages/medicineAll/BabyCare";
-import DentalCare from "../Pages/medicineAll/DentalCare";
-import PersonalCare from "../Pages/medicineAll/PersonalCare";
-import Devices from "../Pages/medicineAll/Devices";
-import PrescriptionMedicine from "../Pages/medicineAll/PrescriptionMedicine";
+import Gastric from "../Pages/medicineAll/Gastric";
+import Eczema from "../Pages/medicineAll/Eczema";
+import Nasal from "../Pages/medicineAll/Nasal";
+import ZincDeficiency from "../Pages/medicineAll/ZincDeficiency";
+import Spasm from "../Pages/medicineAll/Spasm";
+import Diarrhea from "../Pages/medicineAll/Diarrhea";
+import Fever from "../Pages/medicineAll/Fever";
+import CoughFlu from "../Pages/medicineAll/CoughFlu";
+import Ulcer from "../Pages/medicineAll/Ulcer";
+import Constipation from "../Pages/medicineAll/Constipation";
+import Vitamins from "../Pages/medicineAll/Vitamins";
+import Dermatitis from "../Pages/medicineAll/Dermatitis";
+import OralFungalInfection from "../Pages/medicineAll/OralFungalInfection";
+import Gynecological from "../Pages/medicineAll/Gynecological";
 
 
 
@@ -45,37 +51,61 @@ export const router = createBrowserRouter([
                 element: <OTCmedicine></OTCmedicine>
             },
             {
-                path: 'women-choice',
-                element: <WomenChoice></WomenChoice>
+                path: 'nasal',
+                element: <Nasal></Nasal>
             },
             {
-                path: 'sexual-wellness',
-                element: <SexualWellness></SexualWellness>
+                path: 'gastric',
+                element: <Gastric></Gastric>
             },
             {
-                path: "diabetic-care",
-                element: <DiabeticCare></DiabeticCare>
+                path: "zinc-deficiency",
+                element: <ZincDeficiency></ZincDeficiency>
             },
             {
-                path: 'baby-care',
-                element: <BabyCare></BabyCare>
+                path: 'eczema',
+                element: <Eczema></Eczema>
             },
             {
-                path: "dental-care",
-                element: <DentalCare></DentalCare>
+                path: "Spasm",
+                element: <Spasm></Spasm>
             },
             {
-                path: 'personal-care',
-                element: <PersonalCare></PersonalCare>
+                path: 'cough-flu',
+                element: <CoughFlu></CoughFlu>
             },
             {
-                path: "devices",
-                element: <Devices></Devices>
+                path: "diarrhea",
+                element: <Diarrhea></Diarrhea>
 
             },
             {
-                path: "prescription-medicine",
-                element: <PrescriptionMedicine></PrescriptionMedicine>
+                path: "fever",
+                element: <Fever></Fever>
+            },
+            {
+                path: "ulcer",
+                element: <Ulcer></Ulcer>
+            },
+            {
+                path: "constipation",
+                element: <Constipation></Constipation>
+            },
+            {
+                path: "vitamins",
+                element: <Vitamins></Vitamins>
+            },
+            {
+                path: "dermatitis",
+                element: <Dermatitis></Dermatitis>
+            },
+            {
+                path: 'oral-fungal-infection',
+                element: <OralFungalInfection></OralFungalInfection>
+            },
+            {
+                path: 'gynecological',
+                element: <Gynecological></Gynecological>
             }
 
         ]

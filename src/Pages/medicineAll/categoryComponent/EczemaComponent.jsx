@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
 
-const BabyCareComponent = ({ item }) => {
+const EczemaComponent = ({ item }) => {
     
     const { name, quantity, generic, company, offer, mrp, price, form, category, img } = item;
-    const showCard = item.category === 'Nasal';
+    const showCard = item.category === 'Eczema';
 
    
     return (
      
-        <div className="card card-compact w-64 bg-base-100 shadow-xl">
+        <div className="card card-compact w-64 bg-base-100 shadow-lg mb-2">
             {
                 showCard && (
                     < >
+                    <div className="card-body">
                      <figure><img src={img} alt="medicineImg" /></figure>
-                        <div className="card-body">
                         <h2 className="card-title"><span className='truncate'>{name}</span> <span className='text-xs font-semibold relative top-[0.5em]'>{quantity}</span></h2>
                     <p className='font-sans text-[#4fff7b] font'>{generic}</p>
                     <p className='font-sans text-[#c2c9c2] font'>{company}</p>
@@ -32,7 +32,7 @@ const BabyCareComponent = ({ item }) => {
     );
 };
 
-export default BabyCareComponent;
+export default EczemaComponent;
 
 
 
