@@ -17,8 +17,10 @@ import drug14 from '../../assets/logo/gynecological-1655965658095.webp';
 import { FaAngleRight } from "react-icons/fa";
 
 
+
 const Sidebar = () => {
     return (
+        
         <aside className='bg-teal-200 col-span-2 h-screen sticky left-0 top-0 overflow-auto p-4 lg:p-5'>
             <h1 className='text-xl font-medium truncate'>Category of Medicine</h1>
             <nav className='flex flex-col gap-2 mt-5'>
@@ -98,7 +100,9 @@ const Sidebar = () => {
                     <span className='shrink-0 text-sm'><FaAngleRight></FaAngleRight></span>
                 </NavLink>
             </nav>
-        </aside>
+            </aside>
+            
+            
     );
 };
 
